@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint . --ext js,ts,jsx,tsx",
     "lint:fix": "eslint . --ext js,ts,jsx,tsx --fix",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "15.3.5",
@@ -30,5 +31,11 @@
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
