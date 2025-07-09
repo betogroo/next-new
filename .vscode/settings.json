@@ -13,6 +13,8 @@
   "prettier.bracketSameLine": false,
   "prettier.endOfLine": "lf",
 
+  "files.eol": "\n",
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
